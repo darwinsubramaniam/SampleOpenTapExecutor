@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<OpenTapPackageDefinitionPath>package.xml</OpenTapPackageDefinitionPath>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)' == Release">
+		<CreateOpenTapPackage>true</CreateOpenTapPackage>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<AdditionalOpenTapPackage Include="Developer's System" Version="9.18.3+c3d51a44" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="OpenTAP" Version="9.18.4" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="OpenTap.Plugins.BasicSteps">
+	    <HintPath>bin\Debug\net6.0\Packages\OpenTAP\OpenTap.Plugins.BasicSteps.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+</Project>

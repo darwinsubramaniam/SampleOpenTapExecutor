@@ -5,12 +5,12 @@ Console.ForegroundColor = ConsoleColor.White;
 
 Console.WriteLine("Starting OpenTAP");
 
-SearchPlugin().Wait();
+//SearchPlugin().Wait();
 
 for (int i = 0; i < 50; i++)
 {
     Console.WriteLine(i.ToString());
-    //SearchPlugin().Wait();
+    SearchPlugin().Wait();
     var testplan = SampleTestPlanBuilder.GetTestPlan();
     var testPlanRunTask = testplan.ExecuteAsync();
     testPlanRunTask.Wait();
@@ -23,6 +23,7 @@ Task SearchPlugin()
     pluginSearch.ContinueWith(x =>
     {
         var plugins = OpenTap.PluginManager.GetAllPlugins();
+        
     });
     return pluginSearch;
 }

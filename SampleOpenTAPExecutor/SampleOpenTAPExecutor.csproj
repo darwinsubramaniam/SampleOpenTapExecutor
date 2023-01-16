@@ -16,11 +16,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<AdditionalOpenTapPackage Include="Developer's System" Version="9.18.3+c3d51a44" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<PackageReference Include="OpenTAP" Version="9.18.4" />
+		<PackageReference Include="OpenTAP" Version="9.15.2" />
 	</ItemGroup>
 
 	<ItemGroup>

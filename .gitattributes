@@ -60,3 +60,5 @@
 DebugReportDignosticMemory.diagsession filter=lfs diff=lfs merge=lfs -text
 NonRepeatPluginSearchMemoryReport.diagsession filter=lfs diff=lfs merge=lfs -text
 RepeatPluginSearchMemoryReport.diagsession filter=lfs diff=lfs merge=lfs -text
+9.19.4/NonRepeatMemoryReport.diagsession filter=lfs diff=lfs merge=lfs -text
+9.19.4/RepeatMemoryReport.diagsession filter=lfs diff=lfs merge=lfs -text

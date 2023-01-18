@@ -62,3 +62,9 @@ NonRepeatPluginSearchMemoryReport.diagsession filter=lfs diff=lfs merge=lfs -tex
 RepeatPluginSearchMemoryReport.diagsession filter=lfs diff=lfs merge=lfs -text
 9.19.4/NonRepeatMemoryReport.diagsession filter=lfs diff=lfs merge=lfs -text
 9.19.4/RepeatMemoryReport.diagsession filter=lfs diff=lfs merge=lfs -text
+9.15.2/9.15.2_NonRepeatMemoryReport.diagsession filter=lfs diff=lfs merge=lfs -text
+9.15.2/9.15.2_RepeatMemoryReport.diagsession filter=lfs diff=lfs merge=lfs -text
+9.10.4/9.10.4_NotRepeatMemoryReport.diagsession filter=lfs diff=lfs merge=lfs -text
+9.10.4/9.10.4_RepeatMemoryReport.diagsession filter=lfs diff=lfs merge=lfs -text
+9.19.4/9.19.4_NonRepeatMemoryReport.diagsession filter=lfs diff=lfs merge=lfs -text
+9.19.4/9.19.4_RepeatMemoryReport.diagsession filter=lfs diff=lfs merge=lfs -text

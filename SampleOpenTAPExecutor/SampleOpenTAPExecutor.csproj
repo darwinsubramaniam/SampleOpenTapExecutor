@@ -12,11 +12,11 @@
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)' == Release">
-		<CreateOpenTapPackage>true</CreateOpenTapPackage>
+		<CreateOpenTapPackage>false</CreateOpenTapPackage>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="OpenTAP" Version="9.15.2" />
+		<PackageReference Include="OpenTAP" Version="9.10.4" />
 	</ItemGroup>
 
 	<ItemGroup>

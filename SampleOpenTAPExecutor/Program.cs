@@ -12,7 +12,9 @@ for (int i = 0; i < 50; i++)
     Console.WriteLine(i.ToString());
     SearchPlugin().Wait();
     var testplan = SampleTestPlanBuilder.GetTestPlan();
-    var testPlanRunTask = testplan.ExecuteAsync();
+    var cb = new CancellationToken();
+    var resultListener = OpenTap.ResultSettings.Current;
+    var testPlanRunTask = testplan.ExecuteAsync(resultListener, null, null, cb);
     testPlanRunTask.Wait();
 }
 
